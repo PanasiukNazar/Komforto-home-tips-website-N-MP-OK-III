@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Komforto</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta
+            content="Уют дома, лайфхаки для уборки, организация пространства, простые советы по ремонту, эффективная очистка, комфортная жизнь, уютные идеи, порядок в доме"
+            name="keywords"
+        />
+        <meta
+            content="Откройте для себя лучшие советы по созданию уюта: как эффективно организовать пространство, сделать уборку проще и провести мелкий ремонт своими руками. Все лайфхаки в одном месте!"
+            name="description"
+        />
+
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Icon Font Stylesheet -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+            rel="stylesheet"
+        />
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet" />
+        <link
+            href="lib/owlcarousel/assets/owl.carousel.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <!-- Spinner Start -->
+        <div
+            id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+        >
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar Start -->
+        <nav
+            class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5"
+        >
+            <a href="index.html" class="navbar-brand d-flex align-items-center">
+                <h1 class="m-0">Komforto</h1>
+            </a>
+            <button
+                type="button"
+                class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div
+                    class="navbar-nav mx-auto bg-light rounded pe-4 py-3 py-lg-0"
+                >
+                    <a href="index.html" class="nav-item nav-link active"
+                        >Главная</a
+                    >
+                    <a href="about.html" class="nav-item nav-link">О нас</a>
+                    <a href="service.html" class="nav-item nav-link"
+                        >Уют и лайфхаки</a
+                    >
+                    <a href="testimonial.html" class="nav-item nav-link"
+                        >Отзывы</a
+                    >
+                    <a href="contact.html" class="nav-item nav-link"
+                        >Контакты</a
+                    >
+                </div>
+            </div>
+            <a
+                href="contact.html"
+                class="btn btn-primary px-3 d-none d-lg-block"
+                >Связаться с нами</a
+            >
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Carousel Start -->
+        <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
+            <div
+                id="header-carousel"
+                class="carousel slide"
+                data-bs-ride="carousel"
+            >
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img
+                            class="w-100"
+                            src="img/carousel-1.jpg"
+                            alt="Image"
+                        />
+                        <div class="carousel-caption">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <h1
+                                            class="display-3 text-dark mb-4 animated slideInDown text-white"
+                                        >
+                                            Идеи для уюта и порядка
+                                        </h1>
+                                        <p
+                                            class="fs-5 text-body mb-5 text-white"
+                                            style="color: #fff !important"
+                                        >
+                                            Простые лайфхаки для дома: как
+                                            создать уют, организовать
+                                            пространство и поддерживать чистоту
+                                            легко и быстро.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            class="w-100"
+                            src="img/carousel-2.jpg"
+                            alt="Image"
+                        />
+                        <div class="carousel-caption">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <h1
+                                            class="display-3 text-dark mb-4 animated slideInDown text-white"
+                                        >
+                                            Чистота и уют без лишних усилий
+                                        </h1>
+                                        <p
+                                            class="fs-5 text-body mb-5 text-white"
+                                            style="color: #fff !important"
+                                        >
+                                            Ежедневные советы по уборке,
+                                            хранению вещей и мелкому ремонту —
+                                            всё, чтобы ваш дом стал местом
+                                            настоящего комфорта.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#header-carousel"
+                    data-bs-slide="prev"
+                >
+                    <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#header-carousel"
+                    data-bs-slide="next"
+                >
+                    <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Следующий</span>
+                </button>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div
+                            class="position-relative overflow-hidden rounded pt-5 h-100"
+                            style="min-height: 400px"
+                        >
+                            <img
+                                class="position-absolute w-100 h-100"
+                                src="img/approach.jpg"
+                                alt=""
+                                style="object-fit: cover"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="h-100">
+                            <h1 class="display-6 mb-5">
+                                Дом, в котором приятно жить
+                            </h1>
+                            <p class="mb-4">
+                                Проект <strong>Komforto</strong> создан для тех,
+                                кто ценит чистоту, порядок и уют. Мы делимся
+                                уникальными лайфхаками по организации
+                                пространства, быстрой и эффективной уборке, а
+                                также идеями для лёгкого ремонта без лишних
+                                затрат. <br /><br />
+                                Наши советы помогают упростить повседневную
+                                жизнь и сделать дом местом, куда хочется
+                                возвращаться. Мы вдохновляем на создание
+                                гармоничного и функционального пространства,
+                                которое отражает ваш стиль и заботу о себе и
+                                своих близких.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <!-- Facts Start -->
+        <div class="container-fluid overflow-hidden my-5 px-lg-0">
+            <div class="container">
+                <div class="row g-0 mx-lg-0">
+                    <div
+                        class="col-lg-12 facts-counter wow fadeIn"
+                        data-wow-delay="0.5s"
+                    >
+                        <div class="h-100 px-4 pe-lg-0">
+                            <div class="row g-5">
+                                <div class="col-sm-3">
+                                    <h1
+                                        class="display-5"
+                                        data-toggle="counter-up"
+                                    >
+                                        320
+                                    </h1>
+                                    <p class="fs-5 text-primary">
+                                        Полезных лайфхаков
+                                    </p>
+                                </div>
+                                <div class="col-sm-3">
+                                    <h1
+                                        class="display-5"
+                                        data-toggle="counter-up"
+                                    >
+                                        1200
+                                    </h1>
+                                    <p class="fs-5 text-primary">
+                                        Довольных читателей
+                                    </p>
+                                </div>
+                                <div class="col-sm-3">
+                                    <h1
+                                        class="display-5"
+                                        data-toggle="counter-up"
+                                    >
+                                        10
+                                    </h1>
+                                    <p class="fs-5 text-primary">
+                                        Лет ведём блог
+                                    </p>
+                                </div>
+                                <div class="col-sm-3">
+                                    <h1
+                                        class="display-5"
+                                        data-toggle="counter-up"
+                                    >
+                                        100%
+                                    </h1>
+                                    <p class="fs-5 text-primary">
+                                        Практичные советы
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Facts End -->
+
+        <!-- Features Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h1 class="display-6 mb-5">
+                            Почему стоит читать блог Komforto
+                        </h1>
+                        <p class="mb-4">
+                            Если вы хотите создать порядок и уют в своём доме —
+                            наш блог станет вашим лучшим помощником. Мы
+                            публикуем проверенные временем лайфхаки по уборке,
+                            оптимизации хранения вещей и простому ремонту. Здесь
+                            вы найдёте вдохновение и практические советы для
+                            обустройства любого пространства.
+                            <br /><br />
+                            Komforto делится полезными идеями каждый день — от
+                            способов организации кладовки до экологичных средств
+                            для чистки. Все рекомендации сопровождаются фото,
+                            пошаговыми инструкциями и адаптированы под
+                            повседневную жизнь. Давайте сделаем ваш дом уютным
+                            вместе!
+                        </p>
+                        <div class="row g-3">
+                            <div
+                                class="col-sm-6 wow fadeIn"
+                                data-wow-delay="0.1s"
+                            >
+                                <div class="bg-light rounded h-100 p-3">
+                                    <div
+                                        class="bg-white d-flex flex-column justify-content-center text-center rounded h-100 py-4 px-3"
+                                    >
+                                        <img
+                                            class="align-self-center mb-3"
+                                            src="img/icon/icon-06-primary.png"
+                                            alt=""
+                                        />
+                                        <h5 class="mb-0">
+                                            Советы по организации дома
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="col-sm-6 wow fadeIn"
+                                data-wow-delay="0.2s"
+                            >
+                                <div class="bg-light rounded h-100 p-3">
+                                    <div
+                                        class="bg-white d-flex flex-column justify-content-center text-center rounded py-4 px-3"
+                                    >
+                                        <img
+                                            class="align-self-center mb-3"
+                                            src="img/icon/icon-03-primary.png"
+                                            alt=""
+                                        />
+                                        <h5 class="mb-0">Эффективная уборка</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="col-sm-6 wow fadeIn"
+                                data-wow-delay="0.3s"
+                            >
+                                <div class="bg-light rounded h-100 p-3">
+                                    <div
+                                        class="bg-white d-flex flex-column justify-content-center text-center rounded py-4 px-3"
+                                    >
+                                        <img
+                                            class="align-self-center mb-3"
+                                            src="img/icon/icon-04-primary.png"
+                                            alt=""
+                                        />
+                                        <h5 class="mb-0">
+                                            Простые идеи для ремонта
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="col-sm-6 wow fadeIn"
+                                data-wow-delay="0.4s"
+                            >
+                                <div class="bg-light rounded h-100 p-3">
+                                    <div
+                                        class="bg-white d-flex flex-column justify-content-center text-center rounded h-100 py-4 px-3"
+                                    >
+                                        <img
+                                            class="align-self-center mb-3"
+                                            src="img/icon/icon-07-primary.png"
+                                            alt=""
+                                        />
+                                        <h5 class="mb-0">
+                                            Лайфхаки для комфорта
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div
+                            class="position-relative rounded overflow-hidden h-100"
+                            style="min-height: 400px"
+                        >
+                            <img
+                                class="position-absolute w-100 h-100"
+                                src="img/feature.jpg"
+                                alt=""
+                                style="object-fit: cover"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Features End -->
+
+        <!-- Service Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto" style="max-width: 500px">
+                    <h1 class="display-6">
+                        Что вы найдёте в нашем блоге об уюте и домашнем комфорте
+                    </h1>
+                    <p class="mb-5">
+                        Блог <strong>Komforto</strong> — это ваш источник
+                        вдохновения и практических советов для дома. Мы
+                        публикуем лучшие лайфхаки по организации пространства,
+                        уборке и простому ремонту. Всё, чтобы ваш дом стал
+                        максимально уютным и удобным для жизни.
+                    </p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div
+                        class="col-lg-4 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.1s"
+                    >
+                        <div class="service-item rounded h-100 p-5">
+                            <div class="d-flex align-items-center mb-4">
+                                <h4 class="mb-0">Организация хранения</h4>
+                            </div>
+                            <p class="mb-4">
+                                Узнайте, как оптимизировать пространство в
+                                шкафах, на кухне и в кладовке с помощью простых
+                                решений и минимальных затрат.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-4 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.3s"
+                    >
+                        <div class="service-item rounded h-100 p-5">
+                            <div class="d-flex align-items-center mb-4">
+                                <h4 class="mb-0">Эффективная уборка</h4>
+                            </div>
+                            <p class="mb-4">
+                                Советы по быстрой и качественной уборке с
+                                использованием натуральных и доступных средств —
+                                чистота без усилий.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-4 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.5s"
+                    >
+                        <div class="service-item rounded h-100 p-5">
+                            <div class="d-flex align-items-center mb-4">
+                                <h4 class="mb-0">
+                                    Простой ремонт своими руками
+                                </h4>
+                            </div>
+                            <p class="mb-4">
+                                Пошаговые инструкции для мелкого ремонта в
+                                квартире: от замены ручек до покраски стен —
+                                легко, понятно и доступно каждому.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-4 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.1s"
+                    >
+                        <div class="service-item rounded h-100 p-5">
+                            <div class="d-flex align-items-center mb-4">
+                                <h4 class="mb-0">Домашние лайфхаки</h4>
+                            </div>
+                            <p class="mb-4">
+                                Полезные хитрости на каждый день: как упростить
+                                быт, экономить время и поддерживать порядок даже
+                                с детьми и питомцами.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-4 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.3s"
+                    >
+                        <div class="service-item rounded h-100 p-5">
+                            <div class="d-flex align-items-center mb-4">
+                                <h4 class="mb-0">Секреты уюта</h4>
+                            </div>
+                            <p class="mb-4">
+                                Теплый свет, ароматные детали, удобная мебель —
+                                узнайте, как создать атмосферу уюта в каждом
+                                уголке вашего дома.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-4 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.5s"
+                    >
+                        <div class="service-item rounded h-100 p-5">
+                            <div class="d-flex align-items-center mb-4">
+                                <h4 class="mb-0">Сезонные рекомендации</h4>
+                            </div>
+                            <p class="mb-4">
+                                Переход от зимнего уюта к летней свежести:
+                                подборки задач по сезонам, идеи для обновления
+                                интерьера и подготовки дома.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+        <!-- Appointment Start -->
+        <div
+            class="container-fluid appointment my-5 py-5 wow fadeIn"
+            data-wow-delay="0.1s"
+        >
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-12 wow fadeIn" data-wow-delay="0.3s">
+                        <h1 class="display-6 text-white mb-5">
+                            Помогаем сделать ваш дом уютнее
+                        </h1>
+                        <p class="text-white mb-5">
+                            Команда <strong>Komforto</strong> делится
+                            практическими знаниями, которые помогут навести
+                            порядок и гармонию в любом доме. От умных лайфхаков
+                            до простых идей по уходу за жильём — всё это вы
+                            найдёте в нашем блоге. <br /><br />
+                            Мы создаём контент, который вдохновляет, обучает и
+                            делает быт проще. Следите за нашими публикациями и
+                            находите новые способы сделать вашу повседневную
+                            жизнь комфортной и красивой.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Appointment End -->
+
+        <!-- Footer Start -->
+        <div
+            class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn"
+            data-wow-delay="0.1s"
+        >
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-4 col-md-6">
+                        <h1 class="text-white mb-4">Советы для уюта в доме</h1>
+                        <p>
+                            Блог <strong>Komforto</strong> создан для тех, кто
+                            хочет сделать свой дом удобным и красивым. Мы
+                            делимся полезными идеями по уборке, хранению и
+                            мелкому ремонту. Наша цель — помочь вам наслаждаться
+                            комфортом каждый день.
+                        </p>
+
+                        <a class="btn" href="mailto:komforto@gmail.com"
+                            ><i
+                                style="margin-right: 10px"
+                                class="fa fa-solid fa-envelope"
+                            ></i
+                            >komforto@gmail.com</a
+                        >
+                        <a class="btn" href="tel:+77770484111"
+                            ><i
+                                style="margin-right: 10px"
+                                class="fa fa-phone"
+                            ></i
+                            >+77770484111</a
+                        >
+
+                        <a class="btn"
+                            >Ару Ана, 2-этаж, ТД, Гурба көшесі 99А, Сәтбаев
+                            100000</a
+                        >
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="text-light mb-4">Быстрые ссылки</h5>
+                        <a class="btn btn-link" href="about.html">О нас</a>
+                        <a class="btn btn-link" href="contact.html">Контакты</a>
+                        <a class="btn btn-link" href="service.html"
+                            >Наши услуги</a
+                        >
+                        <a class="btn btn-link" href="terms-of-use.html"
+                            >Условия использования</a
+                        >
+                        <a class="btn btn-link" href="privacy-policy.html"
+                            >Политика конфиденциальности</a
+                        >
+                        <a class="btn btn-link" href="cookie-policy.html"
+                            >Политика файлов cookie</a
+                        >
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="text-light mb-4">Подписка на обновления</h5>
+                        <p>
+                            Подпишитесь на нашу рассылку и получайте полезные
+                            советы по организации пространства, уборке и уходу
+                            за домом. Мы делимся только практичным контентом для
+                            вашего комфорта.
+                        </p>
+                        <div
+                            class="position-relative mx-auto"
+                            style="max-width: 400px"
+                        >
+                            <form action="thanks.html" method="get">
+                                <input
+                                    class="form-control bg-transparent w-100 py-3 ps-4 pe-5"
+                                    type="text"
+                                    placeholder="Ваш email"
+                                    id="email"
+                                    required
+                                />
+                                <button
+                                    type="submit"
+                                    class="btn btn-secondary py-2 position-absolute top-0 end-0 mt-2 me-2"
+                                    id="submit"
+                                >
+                                    Подписаться
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+            ><i class="bi bi-arrow-up"></i
+        ></a>
+
+        <!-- Cookie banner -->
+        <div class="cookie-wrapper show">
+            <div>
+                <i class="bx bx-cookie"></i>
+                <h2 style="text-align: center">Использование файлов cookie</h2>
+            </div>
+
+            <div class="data">
+                <p>
+                    Этот сайт использует файлы cookie для улучшения качества
+                    вашего взаимодействия с сайтом.
+                    <a href="cookie-policy.html">Узнать больше...</a>
+                </p>
+            </div>
+
+            <div class="buttons">
+                <button class="cookie-button" id="acceptBtn">Принять</button>
+                <button class="cookie-button" id="declineBtn">Отклонить</button>
+            </div>
+        </div>
+        <!-- End Cookie banner -->
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <script src="js/cookiebanner.js"></script>
+    </body>
+</html>
