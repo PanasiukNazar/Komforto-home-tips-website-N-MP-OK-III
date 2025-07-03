@@ -1,13 +1,13 @@
 /******* Customized Bootstrap ********/
 
-$primary: #2bae66ff;
-$secondary: #2bae66ff;
+$primary: #FC766AFF;
+$secondary: #FC766AFF;
 $light: #f6f7fc;
 $dark: #15233c;
 
-$font-family-base: 'Roboto', sans-serif;
+$font-family-base: "Roboto", sans-serif;
 
-$headings-font-family: 'Poppins', sans-serif;
+$headings-font-family: "Poppins", sans-serif;
 
 $body-color: #696e77;
 
@@ -29,4 +29,4 @@ $link-decoration: none;
 
 $enable-negative-margins: true;
 
-@import 'bootstrap/scss/bootstrap';
+@import "bootstrap/scss/bootstrap";
